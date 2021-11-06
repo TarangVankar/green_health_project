@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow&family=Source+Sans+Pro&display=swap');
+
+
+:root {
+  --main-font: 'Open Sans', sans-serif;
+  --heading-font: 'PT Sans Narrow', sans-serif;;
+  --subheading-font: 'Source Sans Pro', sans-serif;
+  --primary-color: #468F00;
+  --secondary-color: #006392;
+  --dark-grey: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  background: #fff; 
+  color: #000;
+  line-height: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+/* ------------ NAVBAR ------------  */
+
+.logo {
+  width: 71px;
+  height: 61px;
+}
+
+.navbar {
+  display: flex; /* Puts the image and ul in a row */
+  align-items:center; /* Aligns items center of cross axis (vertical) */
+  justify-content: space-between; /* Puts space between the image and the ul */
+  background-color: #333;
+  color: #fff ; 
+  /* opacity: 0.8; Gives the transparent effect */
+  width: 100%; /* navbar will now take 100% width of its parent element (the screen) */
+  height: 77px; 
+  position: fixed; /* navbar will always stay at top even after user scrolls */
+  top: 0px;
+  padding: 0px 30px; /* adds some padding on the sides of the logo and ul */
+}
+
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  border-bottom: var(--primary-color) 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+/* ------------ HERO CONTENT ------------  */
+
+.hero {
+  background: url('../img/home/banner.jpg') no-repeat center center/cover ;
+  height: 100vh;
+  position: relative;
+  color: #333;
+}
+
+.hero .content {
+  display: flex; /* aligns the heading and text in a row */
+  flex-direction: column; /* switched to column */
+  align-items: flex-start; /* aligns the elements to the start (left) in the vertical axis */
+  justify-content: center; /* aligns the elements to the center in the main axis */
+  height: 100%;
+  margin-left: 20px;
+}
+
+.hero h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hero .content p {
+  max-width: 427px;
+  margin-top: 40px;
+}
+
+/* ------------ FEATURES ------------  */
+
+.icons {
+  padding: 30px;
+}
+
+.icons i {
+  color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.icons p {
+  max-width: 300px;
+}
+
+.icons h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ------------ EXPLORE ------------  */
+
+.explore .column-content,
+.explore .column-image {
+  height: 350px;
+}
+
+/* ------------ CONTACT US ------------  */
+
+.contact h1 {
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+
+
+
+/* ********* TOPICS PAGE ********* */
+#topics .hero {
+  background: url('../img/topics/books.jpg') no-repeat center center/cover;
+}
+
+#topics .flex-columns h1 {
+  margin: 60px 0 30px 0;
+}
+
+
+.what-is-chronic-illness .column-content,
+.what-is-chronic-illness .column-image,
+.stats .column-content,
+.stats .column-image {
+  height: 350px;
+}
+
+
+/* Individual topic page */
+#disease .hero {
+  background: none;
+  height: 100px;
+}
+
+#disease h1 {
+  margin: 60px;
+}
+
+#disease .column-image,
+#disease .column-content {
+  height: 330px;
+}
+
+#disease .flex-columns ul {
+  list-style: disc;
+}
+
+#disease .flex-columns ul li {
+  margin: 1rem;
+}
+
+#disease .extra.column-image,
+#disease .extra.column-content {
+  height: 500px;
+}
+
+.links-disease {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding: 20px;
+}
+
+.links-disease a {
+  color: #027C75;
+  font-size: 36px;
+  margin: 1rem;
+}
+
+/* DIET ROUTINES PAGE */
+
+#diet-exercise .hero {
+  background: url('../img/diet/diet.jpg') no-repeat center center/cover;
+}
+
+#diet-exercise .flex-columns h1 {
+  margin: 70px 0 40px 0;
+}
+
+
+.diet-exercise-importance .column-content,
+.diet-exercise-importance .column-image {
+  height: 350px;
+}
+
+
+/* INDIVIDUAL DIET PAGE */
+
+#individual_diet-exercise .hero {
+  background: none;
+  height: 100px;
+}
+
+#individual_diet-exercise h1 {
+  margin: 60px;
+}
+
+#individual_diet-exercise .column-content,
+#individual_diet-exercise .column-image {
+  height: 300px;
+}
+
+#individual_diet-exercise .flex-columns {
+  margin-bottom: 5rem;
+}
+
+
+/* Exercise Page */
+#diet-exercise.ex-banner .hero{
+  background: url('../img/exercise/banner.jpg') no-repeat center center/cover ;
+}
+
+
+/* BLOG PAGE */
+#blog .hero {
+  background: url('../img/blog/blog-banner.jpg') no-repeat center center/cover ;
+}
+
+#blog .flex-columns h1 {
+  margin: 60px;
+}
+
+#blog .column-image,
+#blog .column-content {
+  height: 330px;
+}
+
+#blog .flex-columns {
+  margin-bottom: 5rem;
+}
+
+/* POST PAGE */
+#post .hero {
+  background: url('../img/blog/blog-banner.jpg') no-repeat center center/cover ;
+  
+}
+
+.img-blog {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 3rem 0;
+}
+
+.img-blog img {
+  width: 800px;
+}
+
+#post main p {
+  padding: 20px;
+}
